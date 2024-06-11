@@ -2,7 +2,7 @@
 	<header class="sticky top-0 z-10 flex items-center justify-between bg-white px-5 py-2.5">
 		<PageBreadcrumbs class="h-7" :items="[{ label: 'Data Sources' }]" />
 		<div>
-			<Button label="New Data Source" variant="solid" @click="new_dialog = true">
+			<Button label="New Data Source abc_button" variant="solid" @click="new_dialog = true">
 				<template #prefix>
 					<PlusIcon class="w-4" />
 				</template>
@@ -32,7 +32,7 @@
 					title: 'No Data Sources.',
 					description: 'No data sources to display.',
 					button: {
-						label: 'New Data Source',
+						label: 'New Data Source abc button 	',
 						variant: 'solid',
 						onClick: () => (new_dialog = true),
 					},
@@ -44,7 +44,7 @@
 
 	<NewDialogWithTypes
 		v-model:show="new_dialog"
-		title="Select Source Type"
+		title="Select Source Type sssssssssssssssssssss"
 		:types="databaseTypes"
 	/>
 
@@ -111,6 +111,15 @@ const databaseTypes = ref([
 	{
 		label: 'CSV',
 		description: 'Upload a CSV file',
+		imgSrc: '/src/assets/SheetIcon.png',
+		onClick: () => {
+			new_dialog.value = false
+			showCSVFileUploadDialog.value = true
+		},
+	},
+	{
+		label: 'SSMS',
+		description: 'Connect to a SSMS database',
 		imgSrc: '/src/assets/SheetIcon.png',
 		onClick: () => {
 			new_dialog.value = false
