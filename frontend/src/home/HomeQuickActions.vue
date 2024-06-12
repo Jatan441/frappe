@@ -4,7 +4,7 @@
 			<div class="rounded bg-gray-100 p-1">
 				<FeatherIcon name="arrow-up-right" class="h-4 w-4" />
 			</div>
-			<div class="text-lg">Quick Actions</div>
+			<div class="text-lg">Quick Actions debugging part one</div>
 		</div>
 		<div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
 			<div
